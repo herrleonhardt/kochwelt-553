@@ -1,30 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="de">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
+</head>
+<body>
+    <header>
+        <div class="header_div">
+           <a href="./index.html">
+                <img class="header_logo" src="./img/icons/logo.png" alt="kochweltlogo">
+           </a>
 
-  <body>
-    <section>
-      <header class="header">
-        <img src="./img/logo.png" alt="LogoHeader" />
+           <nav>
+            <li><a class="nav_active" href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./imprint.html">Impressum</a></li>
+           </nav>
+        </div>
+    </header>
 
-        <nav class="NavLink">
-          <a href="#">Start</a>
-          <a href="#">Rezept des Tages</a>
-          <a href="#">Kontakt</a>
-          <a href="#">Impressum</a>
-        </nav>
-      </header>
-    </section>
-  </body>
+
+    <main>
+        <div class="sect_1">
+            <img class="img_croissant" src="./img/croissant.jpg" alt="">
+            <div class="text_container">
+                <h2>Französische Croissants</h2>
+                <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</p>
+                <br><br><br>
+                <button>Rezept öffnen</button>
+            </div>
+        </div>
+    
+        <div class="sect_2">
+            <h2>Lust auf was Neues?</h2>
+            <div class="content_2">
+                <div>
+                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
+                    <p>Frische Croissant </p>
+                </div>
+                <div>
+                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
+                    <p>Frische Croissant</p>
+                </div>
+                <div>
+                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
+                    <p> Croissaint</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="sect_3">
+            <h2>Pfanne vs. Wok - Was ist besser?</h2>
+            <div class="content_3">
+
+                
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas perferendis accusantium veritatis rem. Quae culpa, adipisci corporis numquam blanditiis quaerat nesciunt magnam voluptate, distinctio repellendus ex dolor nihil accusantium.</p>
+
+                <div class="wok_item"><img class="wok_img" src="./img/wok.jpg" alt=""></div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="content_footer">
+            <img class="footer_logo" src="./img/icons/logo.png" alt="">
+            <div class="social_box">
+                <a href="https://www.facebook.com"><img class="social_icons" src="./img/icons/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com"><img class="social_icons" src="./img/icons/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com"><img class="social_icons" src="./img/icons/linkedin.png" alt=""></a>
+            </div>           
+        </div>
+        
+    </footer>
+</body>
 </html>
