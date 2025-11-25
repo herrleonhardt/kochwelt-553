@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_paul.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <img class="logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a class="nav-active" href="#">Start</a></li>
+              <li><a href="#">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container mc-1">
+        <div><h1>Wiener Schnitzel</h1></div>
+        <div>
+          <img class="rezept-bild" src="./img/Rezept_Bild.png" />
+        </div>
+
+        <div class="icons">
+          <div class="icon-1">
+            <img
+              style="width: 10px"
+              src="./img/icons/clock-regular.svg"
+              alt=""
+            />
+            15 Min
+          </div>
+
+          <div class="icon-2">
+            <img style="width: 10px" src="./img/icons/brain-solid.svg" alt="" />
+            simpel
+          </div>
+
+          <div class="icon-3">
+            <img
+              style="width: 10px"
+              src="./img/icons/calendar-alt-regular.svg"
+              alt=""
+            />
+            28.09.2020
+          </div>
+        </div>
+      </div>
+      <div class="container mc-2">
+        <div class="input-section">
+          <p>Zutaten für</p>
+          <input id="portionInput" type="number" value="4" min="1" />
+          <button onclick="updateTable()">Portionen</button>
+        </div>
+        <div class="table section">
+          <table id="zutatenTable">
+            <tr>
+              <td id="schnitzel"></td>
+            </tr>
+            <tr>
+              <td id="salz"></td>
+            </tr>
+            <tr>
+              <td id="mehl"></td>
+            </tr>
+            <tr>
+              <td id="eier"></td>
+            </tr>
+            <tr>
+              <td id="broesel"></td>
+            </tr>
+            <tr>
+              <td id="fett"></td>
+            </tr>
+            <tr>
+              <td id="zitrone"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
