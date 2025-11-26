@@ -1,5 +1,45 @@
-body {
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+.LogoHeader {
+    width: 180px;
+    height: 55px;
+}
+
+.MenulinksHeader {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 8px;
+    display: inline-flex;
+}
+
+.MenulinksHeader:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    color: #098C09;
+}
+
+html body {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .impressum {
@@ -10,13 +50,37 @@ body {
     padding: 20px;
     border-radius: 10px;
     border-color: black;
-    border: 1px solid rgb(0,0,0,0.05);
+    border: 1px solid rgb(0, 0, 0, 0.05);
 }
 
-.impressum a{
+.impressum a {
     text-decoration: none;
     color: black;
 }
-.impressum a:hover{
+
+.impressum a:hover {
     text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    background-color: #342f35;
+    margin-top: auto;
+}
+
+.kochweltLogoFooter {
+    width: 180px;
+    height: 70px;
+}
+
+.socialmediaLogoFooter img {
+    width: 150px;
+    height: 45px;
+    padding-left: 10px;
 }
