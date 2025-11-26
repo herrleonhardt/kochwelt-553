@@ -14,6 +14,12 @@
     padding-bottom: 50px;
 }
 
+.icons2{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
 .icon-1{
     display: flex;
     align-items: center;
@@ -47,6 +53,28 @@
     border-radius: 0.5rem;
 }
 
+.icon-4{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    height: 25px;
+    width: 130px;
+    background-color: #EFEFEF;
+    border-radius: 0.5rem;
+}
+
+.icon-5{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    height: 25px;
+    width: 220px;
+    background-color: #EFEFEF;
+    border-radius: 0.5rem;
+}
+
 .input-section{
     display: flex;
     align-items: center;
@@ -73,6 +101,10 @@ button{
     cursor: pointer;
 }
 
+.mc-2{
+    padding-bottom: 40px;
+}
+
 .table-section{
     display: flex;
     justify-content: center;
@@ -91,7 +123,13 @@ td, th{
 }
 
   tr:nth-child(odd) td {
-    background-color:#EFEFEF;   /* jede zweite Zeile grau */
+    background-color:#EFEFEF;
+  }
+
+  .ersteller{
+    display: flex;
+    padding-bottom: 80px;
+    gap: 30px;
   }
 
 

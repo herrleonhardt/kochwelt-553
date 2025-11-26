@@ -1,82 +1,145 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_paul.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header_div">
-           <a href="./index.html">
-                <img class="header_logo" src="./img/icons/logo.png" alt="kochweltlogo">
-           </a>
-
-           <nav>
-            <li><a class="nav_active" href="./index.html">Start</a></li>
-            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-            <li><a href="./imprint.html">Impressum</a></li>
-           </nav>
+      <div class="container header-content">
+        <div class="header_logo">
+          <img class="logo" src="./img/logo.png" alt="" />
         </div>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a class="nav-active" href="#">Start</a></li>
+              <li><a href="#">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="hamburger-menu"
+          onclick="toggleResponsiveNav()"
+          class="hidden-on-desktop"
+        >
+          <svg
+            class="hidden-on-desktop"
+            width="var(--headder-height)"
+            height="var(--headder-height)"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20 7L4 7"
+              stroke="var(--green)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M20 12L4 12"
+              stroke="var(--green)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M20 17L4 17"
+              stroke="var(--green)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
     </header>
-
-
+    <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+      <nav>
+        <ul>
+          <li><button onclick="toggleResponsiveNav()">x</button></li>
+          <li><a class="nav-active" href="#">Start</a></li>
+          <li><a href="#">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="#">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
-        <div class="sect_1">
-            <img class="img_croissant" src="./img/croissant.jpg" alt="">
-            <div class="text_container">
-                <h2>Französische Croissants</h2>
-                <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</p>
-                <br><br><br>
-                <button>Rezept öffnen</button>
-            </div>
+      <section class="recipe-preview container">
+        <img src="./img/croissant.jpg" alt="" />
+        <div>
+          <h2>Rezept des Tages</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quos
+            ut, quis praesentium totam quo eaque necessitatibus similique
+            officiis soluta a nisi, odit eveniet! Exercitationem quo temporibus
+            molestias fugiat tenetur.
+          </p>
+          <a class="btn-primary" href="./rezept-des-tages.html"
+            >Rezept öffnen</a
+          >
         </div>
-    
-        <div class="sect_2">
-            <h2>Lust auf was Neues?</h2>
-            <div class="content_2">
-                <div>
-                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
-                    <p>Frische Croissant </p>
-                </div>
-                <div>
-                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
-                    <p>Frische Croissant</p>
-                </div>
-                <div>
-                    <img class="croissant_img" src="./img/croissant.jpg" alt="">
-                    <p> Croissaint</p>
-                </div>
-            </div>
+      </section>
+      <section class="recipe-links">
+        <h2>Lust auf was neues?</h2>
+        <div class="recipe-links div container">
+          <a style="text-decoration: none; color: black" href="#"
+            ><img src="./img/croissant.jpg" alt="" />
+            <h3>Ungarisches Gulasch</h3></a
+          >
+          <a style="text-decoration: none; color: black" href="#"
+            ><img src="./img/croissant.jpg" alt="" />
+            <h3>Wiener Schnitzel</h3></a
+          >
+          <a style="text-decoration: none; color: black" href="#"
+            ><img src="./img/croissant.jpg" alt="" />
+            <h3>Frische Croissants</h3></a
+          >
         </div>
-
-        
-        <div class="sect_3">
-            <h2>Pfanne vs. Wok - Was ist besser?</h2>
-            <div class="content_3">
-
-                
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas perferendis accusantium veritatis rem. Quae culpa, adipisci corporis numquam blanditiis quaerat nesciunt magnam voluptate, distinctio repellendus ex dolor nihil accusantium.</p>
-
-                <div class="wok_item"><img class="wok_img" src="./img/wok.jpg" alt=""></div>
-            </div>
+      </section>
+      <section class="misc-infos container">
+        <h2 style="text-align: center;">Pfanne vs. Wok, Was ist besser?</h2>
+        <div>
+          <p>
+            Ob Pfanne oder Wok „besser“ ist, hängt stark davon ab, was du kochen
+            möchtest. Pfannen sind ideal für gleichmäßiges Braten und Rösten,
+            während Woks durch ihre Form perfekt für schnelles, fettarmes Rühren
+            und asiatische Gerichte geeignet sind.
+          </p>
+          <img src="./img/wok.jpg" alt="" />
         </div>
+      </section>
     </main>
-
-
     <footer>
-        <div class="content_footer">
-            <img class="footer_logo" src="./img/icons/logo.png" alt="">
-            <div class="social_box">
-                <a href="https://www.facebook.com"><img class="social_icons" src="./img/icons/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com"><img class="social_icons" src="./img/icons/instagram.png" alt=""></a>
-                <a href="https://www.linkedin.com"><img class="social_icons" src="./img/icons/linkedin.png" alt=""></a>
-            </div>           
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
         </div>
-        
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="./script.js"></script>
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt - ungarisches Gulasch</title>
+    <link rel="stylesheet" href="./style-stefan.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <main class="container">
+      <h1 class="recipe-heading">Ungarisches Gulasch</h1>
+      <!-- noch nach links schieben -->
+
+      <img
+        class="recipe-image"
+        src="./img/ungarisches-gulasch.webp"
+        alt="picture of hungarian gulasch"
+      />
+      <section class="attributes">
+        <div class="attribute">
+          <img src="./img/icons/clock-regular.svg" alt="clock icon" />90 min
+        </div>
+        <div class="attribute">
+          <img src="./img/icons/brain-solid.svg" alt="brain icon" />einfach
+        </div>
+        <div class="attribute">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar icon"
+          />20.06.2024
+        </div>
+      </section>
+      <div class="separator"></div>
+      <section class="recipe-ingredients container">
+        <form
+          class="portions-form"
+          id="portions-form"
+          onsubmit="calculatePortions();return false"
+        >
+          <label for="portions-count">Zutaten für:</label>
+          <input type="number" value="5" min="1" max="20" id="portions-count" />
+          <input type="email"/>
+          <input class="mybutton" type="submit" value="Portionen" />
+        </form>
+
+        <ul class="ingredients-list" id="ingredients-list">
+          <li base-amount="125">
+            <span class="amount"></span>g Gulasch (Schwein, am besten
+            Schinkengulasch)
+          </li>
+          <li base-amount="1"><span class="amount"></span> Zwiebel(n)</li>
+          <li base-amount="0.5"><span class="amount"></span> Paprikaschoten</li>
+          <li base-amount="12.5"><span class="amount"></span>g Margarine</li>
+          <li base-amount="0.25"><span class="amount"></span>EL Tomatenmark</li>
+          <li base-amount="0.25">
+            <span class="amount"></span>EL Paprikapulver (edelsüß)
+          </li>
+          <li base-amount="125"><span class="amount"></span>ml Rinderbrühe</li>
+          <li base-amount="0.5"><span class="amount"></span>TL Speisestärke</li>
+          <li base-amount="0.25"><span class="amount"></span>Becher Schmand</li>
+          <li>Salz und Pfeffer nach Geschmack</li>
+        </ul>
+      </section>
+      <section class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="attributes">
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            Zubereitung: 20 min
+          </div>
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            Gesamtzeit: 100 min
+          </div>
+        </div>
+
+        <ol>
+          <li>
+            Das Fleisch unter fließendem kaltem Wasser abspülen. Dann trocken
+            tupfen und in Würfel schneiden. Die Zwiebeln abziehen und in
+            Scheiben schneiden. Die Paprikaschoten halbieren, entstielen,
+            entkernen und die weißen Scheidewände entfernen. Die Schoten dann
+            waschen und in Streifen schneiden.
+          </li>
+          <li>
+            Margarine oder Butter zerlassen. Das Fleisch darin anbraten und mit
+            Salz und Pfeffer würzen. Danach Zwiebeln, Paprikaschoten,
+            Tomatenmark und Paprikapulver hinzufügen und die Zutaten vermengen.
+            Die heiße Fleischbrühe hinzu gießen und alles in den gut gewässerten
+            Römertopf umfüllen. Mit dem Deckel verschließen und auf dem Rost in
+            den kalten Backofen schieben.
+          </li>
+          <li>
+            In den kalten Backofen schieben und bei 200°C - 220°C
+            Ober-/Unterhitze (Heißluft: 180°C 200°C, Gas: Stufe 4 - 5) ca. 80
+            bis 90 Minuten garen.
+          </li>
+          <li>
+            Speisestärke mit Schmand anrühren und etwa 15 Minuten vor Beendigung
+            der Garzeit unter das Gulasch rühren.
+          </li>
+        </ol>
+      </section>
+
+      <section class="creator">
+        <h3>Rezept erstellt von</h3>
+        <div>
+          <img src="./img/user/stefan.jpg" alt="image of Stefan" />
+          <span>Stefan</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      
+    </footer>
+  </body>
+  <script src="./script-stefan.js"></script>
+</html>

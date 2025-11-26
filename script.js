@@ -1,4 +1,4 @@
-function toggleMenu() {
-  const menu = document.querySelector(".responsive-nav");
+function toggleResponsiveNav() {
+  const menu = document.getElementById("responsive-nav");
   menu.classList.toggle("responsive-nav-closed");
 }
