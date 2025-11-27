@@ -8,6 +8,7 @@
   --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   --header-height: 70px;
   --footer-height: 90px;
+  --input-btn-height: 30px;
 }
 
 html{
@@ -33,10 +34,10 @@ body{
 
 .btn-primary{
     background-color: var(--green); 
-    height: 30px; 
+    height: var(--input-btn-height); 
     min-width: 150px;
   color: white;
-  padding-top: 2px;
+
   font-weight: 300;
 
   cursor: pointer;

@@ -1,3 +1,15 @@
+:root {
+  --green: #248000;
+  --footer-bg: #403B3B;
+  --bg: #ffffff;
+  --bg_alternativ:#EFEFEF; 
+  --border: #F7F7F7;
+  --radius: 8px;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --header-height: 70px;
+  --footer-height: 90px;
+  --input-btn-height: 30px;
+}
 
 .recipe-heading{
   width: 100%;
@@ -22,7 +34,7 @@
 .attribute {
   display: flex;
   justify-content: flex-start;
-  background-color: var(--light-grey);
+  background-color: var(--bg_alternativ);
   align-items: center;
   gap: 8px;
   padding: 2px 8px;
@@ -45,6 +57,7 @@
 
 .portions-form input[type="number"] {
   width: 180px;
+  height: var(--input-btn-height);
   margin-left: 32px;;
   padding: 4px 8px;
   border-top-left-radius: var(--radius);
@@ -66,7 +79,7 @@ border-radius: var(--radius);
 }
 
 .ingredients-list li:nth-child(odd) {
-  background-color: var(--light-grey);
+  background-color: var(--bg_alternativ);
 }
 
 .separator {

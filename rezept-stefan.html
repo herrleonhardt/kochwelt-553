@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt - ungarisches Gulasch</title>
-    <link rel="stylesheet" href="./style-stefan.css" />
     <link rel="stylesheet" href="./style.css" />
-
+    <link rel="stylesheet" href="./style-stefan.css" />
   </head>
   <body>
-    <header>
-    </header>
+    <header>test</header>
 
     <main class="container">
       <h1 class="recipe-heading">Ungarisches Gulasch</h1>
-      <!-- noch nach links schieben -->
 
       <img
         class="recipe-image"
@@ -36,7 +33,7 @@
         </div>
       </section>
       <div class="separator"></div>
-      <section class="recipe-ingredients container">
+      <section class="recipe-ingredients">
         <form
           class="portions-form"
           id="portions-form"
@@ -44,8 +41,7 @@
         >
           <label for="portions-count">Zutaten für:</label>
           <input type="number" value="5" min="1" max="20" id="portions-count" />
-          <input type="email"/>
-          <input class="mybutton" type="submit" value="Portionen" />
+          <input class="btn-primary" type="submit" value="Portionen" />
         </form>
 
         <ul class="ingredients-list" id="ingredients-list">
@@ -116,9 +112,7 @@
       </section>
     </main>
 
-    <footer>
-      
-    </footer>
+    <footer></footer>
   </body>
   <script src="./script-stefan.js"></script>
 </html>
