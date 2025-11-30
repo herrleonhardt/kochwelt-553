@@ -8,7 +8,59 @@
     <link rel="stylesheet" href="./style-stefan.css" />
   </head>
   <body>
-    <header>test</header>
+        <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <img class="logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a class="nav-active" href="#">Start</a></li>
+              <li><a href="#">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger-menu hidden-on-desktop" onclick="toggleResponsiveNav()">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+         <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+      <nav>
+        <ul>
+          <li><button onclick="toggleResponsiveNav()">x</button></li>
+          <li><a class="nav-active" href="#">Start</a></li>
+          <li><a href="#">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="#">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
 
     <main class="container">
       <h1 class="recipe-heading">Ungarisches Gulasch</h1>
@@ -115,4 +167,5 @@
     <footer></footer>
   </body>
   <script src="./script-stefan.js"></script>
+  <script src="./script.js"></script>
 </html>

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_paul.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,42 +27,34 @@
               <li><a href="#">Impressum</a></li>
             </ul>
           </nav>
-        </div>
-        <div
-          class="hamburger-menu"
-          onclick="toggleResponsiveNav()"
-          class="hidden-on-desktop"
-        >
-          <svg
-            class="hidden-on-desktop"
-            width="var(--headder-height)"
-            height="var(--headder-height)"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M20 7L4 7"
-              stroke="var(--green)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M20 12L4 12"
-              stroke="var(--green)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M20 17L4 17"
-              stroke="var(--green)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-          </svg>
+          <div class="hamburger-menu hidden-on-desktop" onclick="toggleResponsiveNav()">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </header>
-    <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+         <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
       <nav>
         <ul>
           <li><button onclick="toggleResponsiveNav()">x</button></li>
@@ -76,6 +65,8 @@
         </ul>
       </nav>
     </div>
+    </header>
+ 
     <main>
       <section class="recipe-preview container">
         <img src="./img/croissant.jpg" alt="" />
@@ -94,9 +85,9 @@
       </section>
       <section class="recipe-links">
         <h2>Lust auf was neues?</h2>
-        <div class="recipe-links div container">
-          <a style="text-decoration: none; color: black" href="#"
-            ><img src="./img/croissant.jpg" alt="" />
+        <div class="container">
+          <a style="text-decoration: none; color: black" href="./rezept-stefan.html"
+            ><img src="./img/ungarisches-gulasch.webp" alt="" />
             <h3>Ungarisches Gulasch</h3></a
           >
           <a style="text-decoration: none; color: black" href="#"
@@ -110,7 +101,7 @@
         </div>
       </section>
       <section class="misc-infos container">
-        <h2 style="text-align: center;">Pfanne vs. Wok, Was ist besser?</h2>
+        <h2 style="text-align: center">Pfanne vs. Wok, Was ist besser?</h2>
         <div>
           <p>
             Ob Pfanne oder Wok „besser“ ist, hängt stark davon ab, was du kochen
