@@ -5,33 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="./img/logo_small.png">
   </head>
   <body>
     <header>
       <div class="container header-content">
         <div class="header_logo">
-          <img class="logo" src="./img/logo.png" alt="" />
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
         </div>
         <div class="header_nav">
           <nav>
             <ul>
-              <li><a class="nav-active" href="#">Start</a></li>
-              <li><a href="#">Rezept des Tages</a></li>
+              <li><a class="nav-active" href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
               <li><a href="./contact.html">Kontakt</a></li>
-              <li><a href="#">Impressum</a></li>
+              <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
             </ul>
           </nav>
-          <div class="hamburger-menu hidden-on-desktop" onclick="toggleResponsiveNav()">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-            >
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M20 7L4 7"
                 stroke="var(--green)"
@@ -54,19 +51,19 @@
           </div>
         </div>
       </div>
-         <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
-      <nav>
-        <ul>
-          <li><button onclick="toggleResponsiveNav()">x</button></li>
-          <li><a class="nav-active" href="#">Start</a></li>
-          <li><a href="#">Rezept des Tages</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-          <li><a href="#">Impressum</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a class="nav-active" href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
- 
+
     <main>
       <section class="recipe-preview container">
         <img src="./img/croissant.jpg" alt="" />
@@ -86,11 +83,15 @@
       <section class="recipe-links">
         <h2>Lust auf was neues?</h2>
         <div class="container">
-          <a style="text-decoration: none; color: black" href="./rezept-stefan.html"
+          <a
+            style="text-decoration: none; color: black"
+            href="./rezept-stefan.html"
             ><img src="./img/ungarisches-gulasch.webp" alt="" />
             <h3>Ungarisches Gulasch</h3></a
           >
-          <a style="text-decoration: none; color: black" href="#"
+          <a
+            style="text-decoration: none; color: black"
+            href="./paul_rezept.html"
             ><img src="./img/croissant.jpg" alt="" />
             <h3>Wiener Schnitzel</h3></a
           >

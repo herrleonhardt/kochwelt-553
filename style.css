@@ -11,12 +11,17 @@
   --input-btn-height: 30px;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
 html {
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: ;
+  font-size: 14px;
   color: black;
   padding: 0;
   position: relative;
@@ -26,18 +31,21 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
+  margin-block: 0;
 }
 
 h1{
+  font-size: 42px;
   margin-top: 32px;
 }
 
 h2{
-
+  font-size: 30px;
 }
 
 h3{
 
+  font-size: 18px;
 
 }
 
@@ -138,7 +146,7 @@ nav a:hover {
   top: 0;
   right: 0;
   background-color: rgba(123, 123, 123, 0.95);
-  transition: transform 220ms ease-in-out;
+  transition: transform 100ms ease-in-out;
   border-radius: 20px;
 }
 
