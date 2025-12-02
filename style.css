@@ -41,6 +41,7 @@ h1{
 
 h2{
   font-size: 30px;
+  margin-bottom: 24px;
 }
 
 h3{
@@ -145,8 +146,11 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(123, 123, 123, 0.95);
+  background-color: var(--bg_alternativ);
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.1));
+  box-shadow: var(--shadow);
   transition: transform 100ms ease-in-out;
+  border: rgba(0, 0, 0, 0.3) 1px solid;
   border-radius: 20px;
 }
 
@@ -183,6 +187,8 @@ main {
 }
 
 .recipe-preview img {
+  display: flex;
+  flex-direction: column;
   height: 250px;
   width: 400px;
   object-fit: cover;
@@ -193,6 +199,7 @@ main {
   background-color: #efefef;
   padding-bottom: 90px;
   padding-top: 20px;
+  
 }
 
 .recipe-links div {
@@ -220,12 +227,15 @@ main {
 .misc-infos img {
   height: 180px;
   width: 180px;
+  object-fit: cover;
   border-radius: var(--radius);
 }
 
 .misc-infos {
   padding-top: 30px;
   padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -306,11 +316,9 @@ footer {
   }
 
   .recipe-links div {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-    margin-top: 20px;
   }
 
   .misc-infos div {
@@ -318,5 +326,11 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
+  }
+
+  .misc-infos img {
+    width: 100%;
+    height: unset;
+    aspect-ratio: 16 / 10;
   }
 }

@@ -5,22 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt - Kontakt</title>
     <link rel="stylesheet" href="./contact-style.css" />
-    <link rel="stylesheet" href="../style.css" />
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+              <li><a class="nav-active" href="./contact.html">Kontakt</a></li>
+              <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+            </ul>
+          </nav>
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a class="nav-active" href="./contact.html">Kontakt</a></li>
+            <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="container">
-      <div class="contactform">
+      <section class="contactform">
         <h1>Kontaktiere uns</h1>
         <!-- modify this form HTML and place wherever you want your form -->
-        <form action="https://formspree.io/f/mankkbgb" method="POST">
+        <form onsubmit="sendMail(event)">
           <label>
             Dein Name:
             <input type="text" name="name" />
           </label>
-          
+
           <label>
             Deine E-Mail:
             <input type="email" name="email" />
@@ -30,10 +83,28 @@
             <textarea name="message"></textarea>
           </label>
           <!-- your other form fields go here -->
-          <button class="mybutton" type="submit">Absenden</button>
+          <button class="btn-primary" type="submit">Absenden</button>
         </form>
-      </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
