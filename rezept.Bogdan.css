@@ -1,0 +1,197 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+.LogoHeader {
+    width: 180px;
+    height: 55px;
+}
+
+.MenulinksHeader {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 8px;
+    display: inline-flex;
+}
+
+.MenulinksHeader:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    color: #098C09;
+}
+
+html body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    background-color: #342f35;
+    margin-top: auto;
+}
+
+.kochweltLogoFooter {
+    width: 180px;
+    height: 70px;
+}
+
+.socialmediaLogoFooter img {
+    width: 150px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.rezept {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 50px;
+}
+
+.rezept img {
+    width: 100%;
+    height: 170px;
+    border-radius: 7px;
+}
+
+.rezept h1 {
+    font-size: 24px;
+}
+
+.iconsRezept {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 70px;
+}
+
+.iconsRezept img {
+    width: 15px;
+    height: 15px;
+}
+
+.iconItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(239, 239, 239);
+    padding: 7px;
+    border-radius: 8px;
+}
+
+#portionen {
+    cursor: pointer;
+    border: none;
+    padding: 8.5px 40px;
+    color: white;
+    background-color: #098C09;
+    gap: 6px;
+    margin-left: -10px;
+}
+
+#anzahl {
+    padding: 8px 2px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+}
+
+.portionenRezept {
+    margin-top: 10px;
+}
+
+.zutaten {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.zutaten li {
+    padding: 12px 0;
+    padding-left: 30px;
+}
+
+.menge {
+    margin-right: 8px;
+}
+
+.ingredients {
+    background-color: rgba(239, 239, 239);
+    border-radius: 8px;
+}
+
+h2{
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.iconsZubereitung {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+.iconsZubereitung img {
+    width: 15px;
+    height: 15px;
+}
+
+.iconItemzubr {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(239, 239, 239);
+    padding: 7px;
+    border-radius: 8px;
+}
+
+h3{
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+.herstellerProfil{
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.herstellerProfil span{
+    padding-left: 25px;
+}
+
+.herstellerProfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
