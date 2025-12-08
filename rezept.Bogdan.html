@@ -6,41 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eggs Benedict kochwelt</title>
     <link rel="stylesheet" href="rezept.Bogdan.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./rezept.img/logo_small.png">
-    <script src="./rezept.js"></script>
+
 </head>
 
 <body>
-    <section class="header" id="Header">
-        <div>
-            <img class="LogoHeader" src="./rezept.img/logo.png" alt="logoHeader">
+   <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
         </div>
-        <div>
-            <a class="MenulinksHeader" href="#">Start</a>
-            <a class="MenulinksHeader" href="#">Rezept des Tages</a>
-            <a class="MenulinksHeader" href="#">Kontakt</a>
-            <a class="MenulinksHeader" href="#">Impressum</a>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+            </ul>
+          </nav>
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
-    </section>
+      </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <section class="rezept" id="rezept">
         <h1>Egg Benedict</h1>
-        <img src="./rezept.img/egg.benedict.png">
+        <img src="./img/egg.benedict.png">
 
         <div class="iconsRezept">
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span>15 Min.</span>
             </div>
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/brain-solid.svg" alt="">
+                <img src="./img/icons/brain-solid.svg" alt="">
                 <span>simpel</span>
             </div>
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/calendar-alt-regular.svg" alt="">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="">
                 <span>03.12.2025</span>
             </div>
         </div>
@@ -67,12 +112,12 @@
 
         <div class="iconsZubereitung">
             <div class="iconItemzubr">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span>ca. 15 Minuten</span>
             </div>
 
             <div class="iconItemzubr">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span>Gesamtzeit ca. 20 Minuten</span>
             </div>
         </div>
@@ -88,24 +133,31 @@
         <h3>Rezept erstellt von</h3>
 
         <div class="herstellerProfil">
-            <img src="./rezept.img/profile.png" alt="profilBild">
+            <img src="./img/profile.png" alt="profilBild">
             <span>Bogdan-Nicusor</span>
         </div>
 
     </section>
-    <section class="footer" id="Footer">
-        <div>
-            <img class="kochweltLogoFooter" src="./rezept.img/kochweltBlackLogo.png">
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
         </div>
-        <div>
-            <a class="socialmediaLogoFooter" href="https://www.facebook.com/?locale=de_DE"><img
-                    src="./rezept.img/facebookLogo.png" alt="FacebookLogo"></a>
-            <a class="socialmediaLogoFooter" href="https://www.instagram.com/"><img src="./rezept.img/instagramLogo.png"
-                    alt="InstagramLogo"></a>
-            <a class="socialmediaLogoFooter" href="https://x.com/?lang=de"><img src="./rezept.img/twitterLogo.png"
-                    alt="TwitterLogo"></a>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
         </div>
+      </div>
+    </footer>
     </section>
 </body>
-
+    <script src="./rezept.js"></script>
+    <script src="./script.js"></script>
 </html>
