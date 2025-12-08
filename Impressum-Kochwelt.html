@@ -6,9 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum kochwelt</title>
     <link rel="stylesheet" href="Impressum-STYLE.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a class="nav-active" href="./Impressum-Kochwelt.html">Impressum</a></li>
+            </ul>
+          </nav>
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a class="nav-active" href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
     <section class="impressum" id="impressum-und-datenschutz">
         <h2>Impressum</h2>
 
@@ -35,6 +92,26 @@
 
         
     </section>
+    </main>
+
+        <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>

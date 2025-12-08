@@ -121,3 +121,11 @@ border-radius: var(--radius);
   border-radius: 50%;
   margin-right: 16px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 767px)  {
+  .portions-form {
+ flex-direction: column;
+}
+
+}
