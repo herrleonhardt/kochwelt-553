@@ -30,6 +30,79 @@
     color: #098C09;
 }
 
+.hidden-on-desktop {
+    display: none;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 9px;
+}
+
+nav ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #248000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+    text-decoration-thickness: 4px;
+}
+
+.nav-active {
+    color: #248000;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+    text-decoration-thickness: 4px;
+}
+
+.hamburger-menu {
+    width: 30px;
+}
+
+.responsive-nav {
+    max-width: 300px;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg_alternativ);
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.1));
+    box-shadow: var(--shadow);
+    transition: transform 100ms ease-in-out;
+    border: rgba(0, 0, 0, 0.3) 1px solid;
+    border-radius: 20px;
+}
+
+.responsive-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-nav-closed {
+    transform: translateX(100%);
+}
+
 html body {
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -54,12 +127,12 @@ body {
     margin-top: auto;
 }
 
-.kochweltLogoFooter {
+.footer-logo {
     width: 180px;
     height: 70px;
 }
 
-.socialmediaLogoFooter img {
+.footer-socials img {
     width: 150px;
     height: 45px;
     padding-left: 10px;
@@ -79,7 +152,10 @@ body {
 
 .rezept h1 {
     font-size: 24px;
+    margin-bottom: 32px;
 }
+
+
 
 .iconsRezept {
     display: flex;
@@ -282,15 +358,100 @@ h3 {
         font-size: 15px;
     }
 
+    .iconItemzubr {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background-color: rgba(239, 239, 239);
+        padding: 4px;
+        border-radius: 8px;
+    }
+
+    .spanIconzbr {
+        font-size: 15px;
+    }
+
+    .Zubereitung {
+        font-size: 15px;
+    }
+
+    .footer-socials img {
+        width: 100px;
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    .footer-logo {
+        width: 140px;
+        height: 50px;
+    }
+
 }
 
 @media(max-width: 800px) {}
 
-@media(max-width: 700px) {}
+@media(max-width: 700px) {
 
-@media(max-width: 600px) {}
+    .zutatenFür {
+        font-size: 15px;
+    }
 
-@media(max-width: 500px) {}
+    #anzahl {
+        padding: 8px 10px;
+        margin-left: 15px;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #dcdcdc;
+    }
+
+    #portionen {
+        cursor: pointer;
+        border: none;
+        padding: 8.5px 20px;
+        color: white;
+        background-color: #098C09;
+        gap: 6px;
+        margin-left: -10px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .footer-socials img {
+        width: 60px;
+        height: 20px;
+        padding-left: 10px;
+    }
+
+    .footer-logo {
+        width: 100px;
+        height: 40px;
+    }
+
+    .LogoHeader {
+        width: 120px;
+        height: 35px;
+    }
+
+    .herstellerProfil img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+    }
+
+    .herstellerName {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    #anzahl {
+        width: 70px;
+    }
+
+}
 
 @media(max-width: 400px) {}
 

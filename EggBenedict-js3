@@ -9,8 +9,8 @@ function formatZitrone(value) {
 
 
 let button = document.getElementById("portionen");
-let input  = document.getElementById("anzahl");
-let msg    = document.getElementById("limitMessage");
+let input = document.getElementById("anzahl");
+let msg = document.getElementById("limitMessage");
 
 
 input.addEventListener("input", function () {
@@ -28,13 +28,13 @@ input.addEventListener("input", function () {
         return;
     }
 
-  
+
     msg.style.display = "none";
 });
 
 
 button.addEventListener("click", function () {
-    msg.style.display="none";
+    msg.style.display = "none";
     let portionen = Number(input.value);
     let mengen = document.querySelectorAll(".menge");
 
@@ -57,3 +57,4 @@ button.addEventListener("click", function () {
     let zitroneNeu = 0.5 * portionen;
     mengen[5].textContent = formatZitrone(zitroneNeu);
 });
+
