@@ -1,29 +1,11 @@
+function calculatePortion() {
 
-document.getElementById("calculate").addEventListener("click", function () {
+  let onePortion = [100, 2, 250, 150, 150, 150];
 
-//HESPLAMALAR
-const portion =Number(document.getElementById("zutaten").value);
-const zutaten = document.getElementsByClassName("zutat");
+  let amount = document.getElementById("amountInput").value;
 
-for (let i = 0; i < zutaten.length; i++) {
-const text = zutaten[i].innerHTML;
-const numberMatch = text.match(/(\d+)\s*/);
-
-if (numberMatch) {
-const base = Number(numberMatch[1]);
-const result = base * portion;
-
-zutaten[i].innerHTML = text.replace(numberMatch[1], result);
-
-
+  for (let i = 0; i < onePortion.length; i++) {
+      let result = onePortion[i] * amount;
+      document.getElementById(`zutat_${i}`).innerHTML = result;
+  }
 }
-
-
-
-}
-
-
-
-//HESAPLAMAR
-
-});
