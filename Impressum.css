@@ -448,6 +448,10 @@ nav a:hover {
     .TabelleImpressum {
         font-size: 5px;
     }
+
+        .impressum_box h2 {
+        font-size: 10px;
+    }
 }
 
 .container {
