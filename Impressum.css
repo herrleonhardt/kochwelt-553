@@ -148,6 +148,15 @@ body {
     padding-left: 10px;
 }
 
+.TabelleImpressum{
+    font-size: 10px;
+}
+
+.TabelleImpressum td{
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
 
 
 @keyframes fadeIn {
