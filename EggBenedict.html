@@ -5,66 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eggs Benedict kochwelt</title>
-    <link rel="stylesheet" href="eggBenedict1.css">
-    <link rel="stylesheet" href="eggBenedict2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="EggBenedictStyle1.css">
+    <link rel="stylesheet" href="EggBenedictStyle2.css">
     <link rel="icon" type="image/x-icon" href="./rezept.img/logo_small.png">
 </head>
 
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="header_logo">
-                <a href="./index.html"><img class="logo" src="./rezept.img/logo.png" /></a>
-            </div>
-            <div class="header_nav">
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Start</a></li>
-                        <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-                        <li><a href="./contact.html">Kontakt</a></li>
-                        <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
-                    </ul>
-                </nav>
-                <div class="hamburger-menu hidden-on-desktop" onclick="toggleResponsiveNav()">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M20 7L4 7" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M20 12L4 12" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M20 17L4 17" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" />
-                    </svg>
-                </div>
-            </div>
+          <header>
+      <div class="container header-content">
+        <div class="header_logo">
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
         </div>
-        <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
-            <nav>
-                <ul>
-                    <li><button onclick="toggleResponsiveNav()">x</button></li>
-                    <li><a href="./index.html">Start</a></li>
-                    <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-                    <li><a href="./contact.html">Kontakt</a></li>
-                    <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
-                </ul>
-            </nav>
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+            </ul>
+          </nav>
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
+      </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="rezept" id="rezept">
         <h1>Egg Benedict</h1>
-        <img class="rezImg" src="./rezept.img/egg.benedict.png">
+        <img class="rezImg" src="./img/egg.benedict.png">
 
         <div class="iconsRezept">
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span class="spanIcon">15 Min.</span>
             </div>
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/brain-solid.svg" alt="">
+                <img src="./img/icons/brain-solid.svg" alt="">
                 <span class="spanIcon">simpel</span>
             </div>
 
             <div class="iconItem">
-                <img src="./rezept.img/icons/calendar-alt-regular.svg" alt="">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="">
                 <span class="spanIcon">03.12.2025</span>
             </div>
         </div>
@@ -93,12 +114,12 @@
 
         <div class="iconsZubereitung">
             <div class="iconItemzubr">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span class="spanIconzbr">ca. 15 Minuten</span>
             </div>
 
             <div class="iconItemzubr">
-                <img src="./rezept.img/icons/clock-regular.svg" alt="">
+                <img src="./img/icons/clock-regular.svg" alt="">
                 <span class="spanIconzbr">Gesamtzeit ca. 20 Minuten</span>
             </div>
         </div>
@@ -118,28 +139,35 @@
         <h3>Rezept erstellt von</h3>
 
         <div class="herstellerProfil">
-            <img src="./rezept.img/profile.png" alt="profilBild">
+            <img src="./img/profile.png" alt="profilBild">
             <span class="herstellerName">Bogdan-Nicusor</span>
         </div>
 
     </section>
 
     <footer>
-        <div class="footer">
-            <div class="footer-logo">
-                <img class="logo" src="./rezept.img/logo.png" alt="" />
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.facebook.com/" target="_blank"><img class="logo" src="./rezept.img/facebook.png" /></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="logo" src="./rezept.img/instagram.png" /></a>
-                <a href="https://x.com/" target="_blank"><img class="logo" src="./rezept.img/twitter.png" /></a>
-            </div>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="./img/logo.png" alt="" />
         </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="logo" src="./img/Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="logo" src="./img/Instagram.png"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img class="logo" src="./img/Twitter.png"
+          /></a>
+        </div>
+      </div>
     </footer>
 
-    <script src="./eggBenedict3.js"></script>
+    <script src="./EggBenedictScript3.js"></script>
 </body>
-<script src="./eggBenedict1.js"></script>
-<script src="./eggBenedict2.js"></script>
+<script src="./script.js"></script>
+<script src="./EggBenedictScript1.js"></script>
+<script src="./EggBenedictScript2.js"></script>
 
 </html>

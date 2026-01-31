@@ -91,30 +91,14 @@
       <section class="recipe-ingredients">
         <form
           class="portions-form"
-          id="portions-form"
-          onsubmit="calculatePortions();return false"
-        >
+          id="portions-form">
           <label for="portions-count">Zutaten für:</label>
           <input type="number" value="5" min="1" max="20" id="portions-count" />
           <input class="btn-primary" type="submit" value="Portionen" />
         </form>
 
         <ul class="ingredients-list" id="ingredients-list">
-          <li base-amount="125">
-            <span class="amount"></span>g Gulasch (Schwein, am besten
-            Schinkengulasch)
-          </li>
-          <li base-amount="1"><span class="amount"></span> Zwiebel(n)</li>
-          <li base-amount="0.5"><span class="amount"></span> Paprikaschoten</li>
-          <li base-amount="12.5"><span class="amount"></span>g Margarine</li>
-          <li base-amount="0.25"><span class="amount"></span>EL Tomatenmark</li>
-          <li base-amount="0.25">
-            <span class="amount"></span>EL Paprikapulver (edelsüß)
-          </li>
-          <li base-amount="125"><span class="amount"></span>ml Rinderbrühe</li>
-          <li base-amount="0.5"><span class="amount"></span>TL Speisestärke</li>
-          <li base-amount="0.25"><span class="amount"></span>Becher Schmand</li>
-          <li>Salz und Pfeffer nach Geschmack</li>
+          <!-- Ingredients will be populated here by JavaScript -->
         </ul>
       </section>
       <section class="preparation">
@@ -185,6 +169,7 @@
       </div>
     </footer>
   </body>
-  <script src="./script-stefan.js"></script>
+  <script type="module" src="./script-stefan.js"></script>
   <script src="./script.js"></script>
+  <script type="module" src="./recipieLogic.js"></script>
 </html>

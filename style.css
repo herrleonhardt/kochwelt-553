@@ -34,23 +34,19 @@ body {
   margin-block: 0;
 }
 
-h1{
+h1 {
   font-size: 42px;
   margin-top: 32px;
 }
 
-h2{
+h2 {
   font-size: 30px;
   margin-bottom: 24px;
 }
 
-h3{
-
+h3 {
   font-size: 18px;
-
 }
-
-
 
 .hidden-on-desktop {
   display: none;
@@ -209,11 +205,10 @@ main {
 
 .recipe-link {
   max-width: 20%;
-
 }
 
 .recipe-link img {
-width: 100%;
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: var(--radius);
@@ -291,8 +286,6 @@ footer {
     object-fit: cover;
     border-radius: var(--radius);
   }
-
-
 }
 
 /* Responsive 320-767 */
