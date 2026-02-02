@@ -17,4 +17,4 @@ let GulaschZutaten = [
 
 //Rufe die Funktion zur Initialisierung der Rezeptlogik auf
 //und übergebe die Zutatenliste als Argument
-initializeRecipieLogic(GulaschZutaten);
+initializeRecipieLogic(Zutaten);
