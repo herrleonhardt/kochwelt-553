@@ -23,9 +23,9 @@ let GulaschZutaten = [
   { name: "Rinderbrühe", amount: 125, unit: "ml" },
   { name: "Speisestärke", amount: 0.5, unit: "TL" },
   { name: "Schmand", amount: 0.25, unit: "Becher" },
-  { name: "Salz und Pfeffer nach Geschmack", amount: "", unit: "" }
+  { name: "Salz und Pfeffer nach Geschmack", amount: "", unit: "" },
+  { name: "ganz viel Liebe!!! :-)", amount: "", unit: "" }
 ];
-
 
 //Rufe die Funktion zur Initialisierung der Rezeptlogik auf
 //und übergebe die Zutatenliste als Argument

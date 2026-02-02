@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt - ungarisches Gulasch</title>
-    <link rel="icon" href="./img/logo_small.png">
+    <link rel="icon" href="./img/logo_small.png" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./style-stefan.css" />
   </head>
   <body>
-        <header>
+    <header>
       <div class="container header-content">
         <div class="header_logo">
           <a href="./index.html"
@@ -20,7 +19,11 @@
           <nav>
             <ul>
               <li><a href="./index.html">Start</a></li>
-              <li><a class="nav-active" href="./rezept_des_tages.html">Rezept des Tages</a></li>
+              <li>
+                <a class="nav-active" href="./rezept_des_tages.html"
+                  >Rezept des Tages</a
+                >
+              </li>
               <li><a href="./contact.html">Kontakt</a></li>
               <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
             </ul>
@@ -57,7 +60,11 @@
           <ul>
             <li><button onclick="toggleResponsiveNav()">x</button></li>
             <li><a href="./index.html">Start</a></li>
-            <li><a class="nav-active" href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li>
+              <a class="nav-active" href="./rezept_des_tages.html"
+                >Rezept des Tages</a
+              >
+            </li>
             <li><a href="./contact.html">Kontakt</a></li>
             <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
           </ul>
@@ -89,32 +96,14 @@
       </section>
       <div class="separator"></div>
       <section class="recipe-ingredients">
-        <form
-          class="portions-form"
-          id="portions-form"
-          onsubmit="calculatePortions();return false"
-        >
+        <form id="portions-form" class="portions-form">
           <label for="portions-count">Zutaten für:</label>
-          <input type="number" value="5" min="1" max="20" id="portions-count" />
+          <input id="portions-count" type="number" value="5" min="1" max="20" />
           <input class="btn-primary" type="submit" value="Portionen" />
         </form>
 
-        <ul class="ingredients-list" id="ingredients-list">
-          <li base-amount="125">
-            <span class="amount"></span>g Gulasch (Schwein, am besten
-            Schinkengulasch)
-          </li>
-          <li base-amount="1"><span class="amount"></span> Zwiebel(n)</li>
-          <li base-amount="0.5"><span class="amount"></span> Paprikaschoten</li>
-          <li base-amount="12.5"><span class="amount"></span>g Margarine</li>
-          <li base-amount="0.25"><span class="amount"></span>EL Tomatenmark</li>
-          <li base-amount="0.25">
-            <span class="amount"></span>EL Paprikapulver (edelsüß)
-          </li>
-          <li base-amount="125"><span class="amount"></span>ml Rinderbrühe</li>
-          <li base-amount="0.5"><span class="amount"></span>TL Speisestärke</li>
-          <li base-amount="0.25"><span class="amount"></span>Becher Schmand</li>
-          <li>Salz und Pfeffer nach Geschmack</li>
+        <ul id="ingredients-list" class="ingredients-list">
+          <!-- Ingredients will be populated here by JavaScript -->
         </ul>
       </section>
       <section class="preparation">
@@ -185,6 +174,7 @@
       </div>
     </footer>
   </body>
-  <script src="./script-stefan.js"></script>
   <script src="./script.js"></script>
+  <script type="module" src="./script-stefan.js"></script>
+  <script type="module" src="./recipieLogic.js"></script>
 </html>

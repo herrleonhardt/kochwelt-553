@@ -6,7 +6,7 @@
     <title>Kochwelt - ungarisches Gulasch</title>
     <link rel="icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./style-stefan.css" />
+    <!-- <link rel="stylesheet" href="./style-stefan.css" /> -->
   </head>
   <body>
         <header>
@@ -89,15 +89,13 @@
       </section>
       <div class="separator"></div>
       <section class="recipe-ingredients">
-        <form
-          class="portions-form"
-          id="portions-form">
+        <form id="portions-form" class="portions-form">
           <label for="portions-count">Zutaten für:</label>
-          <input type="number" value="5" min="1" max="20" id="portions-count" />
+          <input id="portions-count" type="number" value="5" min="1" max="20" />
           <input class="btn-primary" type="submit" value="Portionen" />
         </form>
 
-        <ul class="ingredients-list" id="ingredients-list">
+        <ul id="ingredients-list" class="ingredients-list" >
           <!-- Ingredients will be populated here by JavaScript -->
         </ul>
       </section>

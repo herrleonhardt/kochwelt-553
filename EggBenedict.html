@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eggs Benedict kochwelt</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="EggBenedictStyle1.css">
-    <link rel="stylesheet" href="EggBenedictStyle2.css">
     <link rel="icon" type="image/x-icon" href="./rezept.img/logo_small.png">
 </head>
 
@@ -68,82 +66,86 @@
       </div>
     </header>
 
-    <section class="rezept" id="rezept">
-        <h1>Egg Benedict</h1>
-        <img class="rezImg" src="./img/egg.benedict.png">
+    <main class="container">
+      <h1 class="recipe-heading">Egg Benedict</h1>
 
-        <div class="iconsRezept">
-
-            <div class="iconItem">
-                <img src="./img/icons/clock-regular.svg" alt="">
-                <span class="spanIcon">15 Min.</span>
-            </div>
-
-            <div class="iconItem">
-                <img src="./img/icons/brain-solid.svg" alt="">
-                <span class="spanIcon">simpel</span>
-            </div>
-
-            <div class="iconItem">
-                <img src="./img/icons/calendar-alt-regular.svg" alt="">
-                <span class="spanIcon">03.12.2025</span>
-            </div>
+      <img
+        class="recipe-image"
+        src="./img/egg.benedict.png"
+        alt="picture of egg benedict"
+      />
+      <section class="attributes">
+        <div class="attribute">
+          <img src="./img/icons/clock-regular.svg" alt="clock icon" />15 min
         </div>
-
-        <div class="portionenRezept">
-            <span class="zutatenFür">Zutaten für</span>
-            <input id="anzahl" type="number" value="1">
-            <button id="portionen">Portionen</button>
+        <div class="attribute">
+          <img src="./img/icons/brain-solid.svg" alt="brain icon" />simpel
         </div>
-        <p id="limitMessage" style="display:none;">
-            Portionenanzahl nur von <strong>1</strong> bis <strong>4</strong>.
-        </p>
-        <div>
-            <ul class="zutaten">
-                <li class="ingredients"><span class="menge">2</span>Eier</li>
-                <li><span class="menge">1</span>Eigelb</li>
-                <li class="ingredients"><span class="menge">50g</span>Butter</li>
-                <li><span class="menge">1</span>English Muffin</li>
-                <li class="ingredients"><span class="menge">2</span>Bacon</li>
-                <li><span class="menge">½</span>Zitrone</li>
-                <li class="ingredients"></span>Salz/Pfeffer</li>
-            </ul>
+        <div class="attribute">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar icon"
+          />03.12.2025
         </div>
+      </section>
+      <div class="separator"></div>
+      <section class="recipe-ingredients">
+        <form id="portions-form" class="portions-form">
+          <label for="portions-count">Zutaten für:</label>
+          <input id="portions-count" type="number" value="5" min="1" max="20" />
+          <input class="btn-primary" type="submit" value="Portionen" />
+        </form>
 
+        <ul id="ingredients-list" class="ingredients-list" >
+          <!-- Ingredients will be populated here by JavaScript -->
+        </ul>
+      </section>
+      <section class="preparation">
         <h2>Zubereitung</h2>
-
-        <div class="iconsZubereitung">
-            <div class="iconItemzubr">
-                <img src="./img/icons/clock-regular.svg" alt="">
-                <span class="spanIconzbr">ca. 15 Minuten</span>
-            </div>
-
-            <div class="iconItemzubr">
-                <img src="./img/icons/clock-regular.svg" alt="">
-                <span class="spanIconzbr">Gesamtzeit ca. 20 Minuten</span>
-            </div>
+        <div class="attributes">
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            ca. 15 Minuten
+          </div>
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            Gesamtzeit ca. 20 Minuten
+          </div>
         </div>
-        <div class="Zubereitung">
+
+        <ol>
+          <li>
             Für Eggs Benedict brätst du zuerst den Bacon in der Pfanne, bis er schön knusprig ist. Währenddessen
-            halbierst
-            du den English Muffin und toastest beide Hälften leicht an. Für die Hollandaise schmilzt du die Butter und
+            du den English Muffin und toastest beide Hälften leicht an.
+          </li>
+          <li>
+            Für die Hollandaise schmilzt du die Butter und
             verrührst das Eigelb mit etwas Zitronensaft über einem warmen Wasserbad, bis es leicht andickt. Dann gießt
             du
-            die geschmolzene Butter langsam dazu, bis eine glatte, cremige Sauce entsteht. Jetzt pochierst du die Eier:
+            die geschmolzene Butter langsam dazu, bis eine glatte, cremige Sauce entsteht.
+          </li>
+          <li>
+           Jetzt pochierst du die Eier:
             Erhitze Wasser in einem Topf, gib etwas Essig dazu und lass die Eier vorsichtig ins leicht siedende Wasser
-            gleiten. Nach wenigen Minuten ist das Eiweiß fest und das Eigelb noch weich. Zum Schluss setzt du alles
+            gleiten. Nach wenigen Minuten ist das Eiweiß fest und das Eigelb noch weich.
+          </li>
+          <li>
+           Zum Schluss setzt du alles
             zusammen: Muffin auf den Teller, Bacon darauf, dann die pochierten Eier und zum Abschluss die warme
             Hollandaise
             darübergeben.
-        </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="creator">
         <h3>Rezept erstellt von</h3>
-
-        <div class="herstellerProfil">
-            <img src="./img/profile.png" alt="profilBild">
-            <span class="herstellerName">Bogdan-Nicusor</span>
+        <div>
+          <img src="./img/profile.png" alt="profilBild"/>
+          <span>Bogdan-Nicusor</span>
         </div>
-
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-content">
@@ -163,11 +165,8 @@
         </div>
       </div>
     </footer>
-
-    <script src="./EggBenedictScript3.js"></script>
 </body>
-<script src="./script.js"></script>
-<script src="./EggBenedictScript1.js"></script>
-<script src="./EggBenedictScript2.js"></script>
-
+  <script src="./script.js"></script>
+  <script type="module" src="./Eggbenedict.js"></script>
+  <script type="module" src="./recipieLogic.js"></script>
 </html>
