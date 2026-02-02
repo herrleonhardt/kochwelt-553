@@ -1,5 +1,20 @@
+export function initializeRecipieLogic(recipie){
 
-export function calculateRecipieIngredients(ingredientsArray){
+//Füge dem Formular einen Event Listener hinzu
+//der auf das Submit-Ereignis hört
+//und die Funktion calculatePortions aufruft
+const Form = document.getElementById("portions-form");
+
+Form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  calculateRecipieIngredients(recipie);
+});
+
+calculateRecipieIngredients(recipie);
+
+}
+
+function calculateRecipieIngredients(ingredientsArray){
 
 const list = document.getElementById("ingredients-list");
 const portionInput = document.getElementById("portions-count").value;

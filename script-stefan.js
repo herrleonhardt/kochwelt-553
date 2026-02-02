@@ -1,6 +1,16 @@
-//script-stefan.js
-//importiere die Funktion aus recipieLogic.js
-import { calculateRecipieIngredients } from "./recipieLogic.js";
+/*
+für die funktionalität ist im HTML folgendes erforderlich:
+- ein formular mit der id "portions-form"
+- ein eingabefeld mit der id "portions-count"
+- eine ungeordnete liste mit der id "ingredients-list"
+
+<script type="module" src="./script-stefan.js"></script>    hier den namen des scripts angeben
+  <script type="module" src="./recipieLogic.js"></script>
+*/
+
+//importiere die Funktion zur Initialisierung der Rezeptlogik
+//aus der Datei recipieLogic.js
+import { initializeRecipieLogic } from "./recipieLogic.js";
 
 //Definiere die Zutatenliste als Array von Objekten
 let GulaschZutaten = [
@@ -16,23 +26,8 @@ let GulaschZutaten = [
   { name: "Salz und Pfeffer nach Geschmack", amount: "", unit: "" }
 ];
 
-//Füge dem Formular einen Event Listener hinzu
-//der auf das Submit-Ereignis hört
-//und die Funktion calculatePortions aufruft
-const Form = document.getElementById("portions-form");
 
-Form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  calculatePortions();
-});
-
-
-//Rufe die Funktion calculatePortions auf, um die Zutaten initial anzuzeigen
-calculatePortions();
-
-//Definiere die Funktion calculatePortions
-//die die Funktion calculateRecipieIngredients mit der Zutatenliste aufruft
-function calculatePortions() {
-  calculateRecipieIngredients(GulaschZutaten);
-}
+//Rufe die Funktion zur Initialisierung der Rezeptlogik auf
+//und übergebe die Zutatenliste als Argument
+initializeRecipieLogic(GulaschZutaten);
 
