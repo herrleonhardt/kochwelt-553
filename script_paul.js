@@ -1,39 +1,17 @@
-const basePortion = 4;
+//importiere die Funktion zur Initialisierung der Rezeptlogik
+//aus der Datei recipieLogic.js
+import { initializeRecipieLogic } from "./recipieLogic.js";
 
-const zutaten = {
-  schnitzel: 4,
-  salz: 4,
-  mehl: 4,
-  eier: 2,
-  broesel: 300,
-  fett: 1,
-  zitrone: 1,
-};
+//Definiere die Zutatenliste als Array von Objekten
+let Zutaten = [
+  { name: "Kalbsschnitzel (à 160 g)", amount: 1, unit: "Stück" },
+  { name: "Salz nach Geschmack", amount: "", unit: "" },
+  { name: "Eier", amount: 0.5, unit: "" },
+  { name: "Brösel", amount: 75, unit: "g" },
+  { name: "Backfett", amount: 0.25, unit: "Pkg" },
+  { name: "Zitrone", amount: 0.25, unit: "Stk" }
+];
 
-function updateTable() {
-  let newPortion = parseInt(document.getElementById("portionInput").value, 10);
-  const factor = newPortion / basePortion;
-
-  if (isNaN(newPortion) || newPortion < 1 || newPortion > 20) {
-    alert("Nur Zahlen zwischen 1 und 20 sind gültig!");
-    document.getElementById("portionInput").value = basePortion;
-    newPortion = basePortion;
-  }
-
-  document.getElementById("schnitzel").textContent =
-    zutaten.schnitzel * factor + " Stück Kalbsschnitzel (à 160 g)";
-  document.getElementById("salz").textContent =
-    zutaten.salz * factor + " Prise/n Salz";
-  document.getElementById("mehl").textContent =
-    zutaten.mehl * factor + " g Mehl (griffig)";
-  document.getElementById("eier").textContent =
-    zutaten.eier * factor + " Stk Eier";
-  document.getElementById("broesel").textContent =
-    zutaten.broesel * factor + " g Semmelbrösel";
-  document.getElementById("fett").textContent =
-    zutaten.fett * factor + " Pkg Backfett (Öl od. Butterschmalz)";
-  document.getElementById("zitrone").textContent =
-    zutaten.zitrone * factor + " Stk Zitrone";
-}
-
-window.onload = updateTable;
+//Rufe die Funktion zur Initialisierung der Rezeptlogik auf
+//und übergebe die Zutatenliste als Argument
+initializeRecipieLogic(Zutaten);

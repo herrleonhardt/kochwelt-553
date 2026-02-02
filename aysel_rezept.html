@@ -3,19 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezept des Tages</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_aysel.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Kochwelt - Italienische Nudeln</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-       <header>
+        <header>
       <div class="container header-content">
         <div class="header_logo">
           <a href="./index.html"
@@ -71,107 +64,105 @@
       </div>
     </header>
 
-    <main>
+    <main class="container">
+      <h1 class="recipe-heading">Italienische Nudeln</h1>
 
+      <img
+        class="recipe-image"
+        src="./img/beetroot-1812564_1280.jpg"
+        alt=""
+      />
+      <section class="attributes">
+        <div class="attribute">
+          <img src="./img/icons/clock-regular.svg" alt="clock icon" />15 min
+        </div>
+        <div class="attribute">
+          <img src="./img/icons/brain-solid.svg" alt="brain icon" />simple
+        </div>
+        <div class="attribute">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar icon"
+          />16.11.2025
+        </div>
+      </section>
+      <div class="separator"></div>
+      <section class="recipe-ingredients">
+        <form id="portions-form" class="portions-form">
+          <label for="portions-count">Zutaten für:</label>
+          <input id="portions-count" type="number" value="4" min="1" max="20" />
+          <input class="btn-primary" type="submit" value="Portionen" />
+        </form>
 
-      <div class="section1">
-        <h1>Italienische Nudeln</h1>
-
-        <div class="cont1"><img class="beetroot" src="./img/beetroot-1812564_1280.jpg" alt=""></div>
-
-    </div>
-
-    <div class="section2">
-
-        <div class="icon"><img class="icon_img" src="./img/icons/clock-regular.svg" alt="">15 min</div>
-        <div class="icon"><img class="icon_img" src="./img/icons/brain-solid.svg" alt="">simple</div>
-        <div class="icon"><img class="icon_img" src="./img/icons/calendar-alt-regular.svg" alt="">16.11.2025</div>
-
-    </div>
-
-    <div class="section3">
-
-        <div class="inputfeld">
-            <label for="Zutaten">Zutaten für</label>
-            <input type="number" id="amountInput">
-            <button id="calculate" class="mybutton"  onclick="calculatePortion()">Portionen</button>
+        <ul id="ingredients-list" class="ingredients-list" >
+          <!-- Ingredients will be populated here by JavaScript -->
+        </ul>
+      </section>
+      <section class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="attributes">
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            Zubereitung: 30 min
+          </div>
+          <div class="attribute">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="" />
+            Gesamtzeit ca. 1 Stunde
+          </div>
         </div>
 
-    </div>
+        <ol>
+          <li>
+            Die Nudeln zuerst ca. 10 min Kochen, inzwischen das ganze Gemüse aufschneiden. In einer Pfanne mit Öl erhitzen.
+          </li>
+          <li>
+            Das Gemüse gut anbraten und Würzen je nach Wahl und dabei auf die Kochstufe achten
+          </li>
+          <li>
+            Danach die Nudeln hinzufügen und gleich Servieren.
+            Jetzt hast du was köstliches zum genießen. Guten Appetit!
+          </li>
+        </ol>
+      </section>
 
-
-
-    <div class="zutaten-liste">
-        <div class="zutat"><p id="zutat_0">100</p>gr Nudeln</div>
-        <div class="zutat"><p id="zutat_1">2</p> Paprika</div>
-        <div class="zutat"><p id="zutat_2">250</p> gr Mais</div>
-        <div class="zutat"><p id="zutat_3">150</p> gr Erbsen</div>
-        <div class="zutat"><p id="zutat_4">150</p> gr Karotten</div>
-        <div class="zutat"><p id="zutat_5">150</p> gr Butter</div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="HowToCook">
-        <div class="howto2">
-            <h2>Zubereitung</h2>
-            <div class="iconAreas">
-                <div class="icons"><img class="iconimages" src="./img/icons/clock-regular.svg" alt="">30 min</div>
-                <div class="icons"><img class="iconimages" src="./img/icons/clock-regular.svg" alt="">Gesamtzeit ca.
-                    1 Stunde</div>
-
-            </div>
-
-            <span>Die Nudeln zuerst ca. 10 min Kochen, inzwischen das ganze Gemüse aufschneiden.
-                In einer Pfanne mit Öl erhitzen, das Gemüse gut anbraten und Würzen je nach Wahl und dabei auf die
-                <br>Kochstufe achten , danach die Nudeln hinzufügen und
-                gleich Servieren, und </br> hast du was köstliches zum genißen Guten Appetit!
-            </span>
+      <section class="creator">
+        <h3>Rezept erstellt von</h3>
+        <div>
+          <img src="./img/profile.png" alt="" />
+          <span>Aysel</span>
         </div>
-    </div>
-
-    <div class="CreatorArea">
-        <div class="creatorarea">
-            <h3 class="h4-resp">Rezept erstellt von</h3>
-            <div class="Creator"><img src="./img/profile.png" alt="">
-                <p> Aysel</p>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
+      </section>
     </main>
-    <footer>
+     <footer>
       <div class="container footer-content">
         <div class="footer-logo">
-          <img class="logo" src="./img/logo.png" alt="" />
+          <img class="logo hidden-on-mobile" src="./img/logo.png" alt="" />
+          <img class="logo hidden-on-desktop" src="./img/logo_small.png" alt="" />
         </div>
         <div class="footer-socials">
           <a href="https://www.facebook.com/" target="_blank"
-            ><img class="logo" src="./img/Facebook.png"
+            ><img class="logo hidden-on-mobile" src="./img/Facebook.png"
           /></a>
           <a href="https://www.instagram.com/" target="_blank"
-            ><img class="logo" src="./img/Instagram.png"
+            ><img class="logo hidden-on-mobile"  src="./img/Instagram.png"
           /></a>
           <a href="https://x.com/" target="_blank"
-            ><img class="logo" src="./img/Twitter.png"
+            ><img class="logo hidden-on-mobile" src="./img/Twitter.png"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Facebook_Responsive.webp"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Insta_Responsive.webp"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Twitter_Responsive.webp"
           /></a>
         </div>
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
+  <script type="module" src="./script_aysel.js"></script>
+  <script type="module" src="./recipieLogic.js"></script>
 </html>
-<script src="script_aysel.js"></script>

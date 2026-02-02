@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
-    <script src="script_paul.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="style_paul.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,18 +17,56 @@
     <header>
       <div class="container header-content">
         <div class="header_logo">
-          <img class="logo" src="./img/logo.png" alt="" />
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt=""
+          /></a>
         </div>
         <div class="header_nav">
           <nav>
             <ul>
-              <li><a class="nav-active" href="#">Start</a></li>
-              <li><a href="#">Rezept des Tages</a></li>
+              <li><a href="./index.html">Start</a></li>
+              <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
               <li><a href="./contact.html">Kontakt</a></li>
-              <li><a href="#">Impressum</a></li>
+              <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
             </ul>
           </nav>
+          <div
+            class="hamburger-menu hidden-on-desktop"
+            onclick="toggleResponsiveNav()"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 7L4 7"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 12L4 12"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 17L4 17"
+                stroke="var(--green)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
+      </div>
+      <div id="responsive-nav" class="responsive-nav responsive-nav-closed">
+        <nav>
+          <ul>
+            <li><button onclick="toggleResponsiveNav()">x</button></li>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./Impressum-Kochwelt.html">Impressum</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -64,41 +101,20 @@
         </div>
       </div>
 
-      <div class="container mc-2">
-        <div class="input-section">
-          <p>Zutaten für</p>
-          <input id="portionInput" type="number" value="4" min="1" />
-          <button onclick="updateTable()">Portionen</button>
-        </div>
-        <div class="table section">
-          <table id="zutatenTable">
-            <tr>
-              <td id="schnitzel"></td>
-            </tr>
-            <tr>
-              <td id="salz"></td>
-            </tr>
-            <tr>
-              <td id="mehl"></td>
-            </tr>
-            <tr>
-              <td id="eier"></td>
-            </tr>
-            <tr>
-              <td id="broesel"></td>
-            </tr>
-            <tr>
-              <td id="fett"></td>
-            </tr>
-            <tr>
-              <td id="zitrone"></td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <section class="recipe-ingredients container mc-2">
+        <form id="portions-form" class="portions-form">
+          <label for="portions-count">Zutaten für:</label>
+          <input id="portions-count" type="number" value="4" min="1" max="20" />
+          <input class="btn-primary" type="submit" value="Portionen" />
+        </form>
+
+        <ul id="ingredients-list" class="ingredients-list">
+          <!-- Ingredients will be populated here by JavaScript -->
+        </ul>
+      </section>
 
       <div class="container mc-3">
-        <h1 style="padding-bottom: 20px;">Zubereitung</h1>
+        <h1 style="padding-bottom: 20px">Zubereitung</h1>
 
         <div class="icons2">
           <div class="icon-4">
@@ -120,7 +136,7 @@
           </div>
         </div>
         <div>
-          <p style="padding-bottom: 20px;">
+          <p style="padding-bottom: 20px">
             Zuerst die Schnitzel zwischen Frischhaltefolie behutsam klopfen.
             Fleisch nun beidseitig salzen, in Mehl wenden, abklopfen, durch die
             Eier ziehen und in den Bröseln wenden. Dann die Schnitzel ca. 2
@@ -131,33 +147,49 @@
             fertigen Wiener Schnitzel mit Zitronenspalten garnieren.
           </p>
 
-          <h3 style="padding-bottom: 20px;">Rezept Erstellt von</h3>
+          <h3 style="padding-bottom: 20px">Rezept Erstellt von</h3>
         </div>
 
         <div class="ersteller">
-          <img style="border-radius: 50%; width: 70px;" src="./img/profile.png" alt="">
-          <h2 style="font-weight: normal;">Paul</h2>
+          <img
+            style="border-radius: 50%; width: 70px ; height: 70px; object-fit: cover;"
+            src="./img/user/Paul-Foto.jpeg"
+            alt=""
+          />
+          <h2 style="font-weight: normal">Paul</h2>
         </div>
-
       </div>
     </main>
     <footer>
       <div class="container footer-content">
         <div class="footer-logo">
-          <img class="logo" src="./img/logo.png" alt="" />
+          <img class="logo hidden-on-mobile" src="./img/logo.png" alt="" />
+          <img class="logo hidden-on-desktop" src="./img/logo_small.png" alt="" />
         </div>
         <div class="footer-socials">
           <a href="https://www.facebook.com/" target="_blank"
-            ><img class="logo" src="./img/Facebook.png"
+            ><img class="logo hidden-on-mobile" src="./img/Facebook.png"
           /></a>
           <a href="https://www.instagram.com/" target="_blank"
-            ><img class="logo" src="./img/Instagram.png"
+            ><img class="logo hidden-on-mobile"  src="./img/Instagram.png"
           /></a>
           <a href="https://x.com/" target="_blank"
-            ><img class="logo" src="./img/Twitter.png"
+            ><img class="logo hidden-on-mobile" src="./img/Twitter.png"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Facebook_Responsive.webp"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Insta_Responsive.webp"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img class="logo hidden-on-desktop" src="./img/Twitter_Responsive.webp"
           /></a>
         </div>
       </div>
     </footer>
   </body>
+  <script type="module" src="script_paul.js"></script>
+  <script src="./script.js"></script>
+  <script type="module" src="./recipieLogic.js"></script>
 </html>

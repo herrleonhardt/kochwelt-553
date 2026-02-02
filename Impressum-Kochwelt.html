@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum kochwelt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Impressum.css">
-    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Impressum.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+  </head>
 
-<body>
-          <header>
+  <body>
+    <header>
       <div class="container header-content">
         <div class="header_logo">
           <a href="./index.html"
@@ -24,7 +23,11 @@
               <li><a href="./index.html">Start</a></li>
               <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
               <li><a href="./contact.html">Kontakt</a></li>
-              <li><a class="nav-active" href="./Impressum-Kochwelt.html">Impressum</a></li>
+              <li>
+                <a class="nav-active" href="./Impressum-Kochwelt.html"
+                  >Impressum</a
+                >
+              </li>
             </ul>
           </nav>
           <div
@@ -61,73 +64,98 @@
             <li><a href="./index.html">Start</a></li>
             <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
             <li><a href="./contact.html">Kontakt</a></li>
-            <li><a class="nav-active" href="./Impressum-Kochwelt.html">Impressum</a></li>
+            <li>
+              <a class="nav-active" href="./Impressum-Kochwelt.html"
+                >Impressum</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="main">
-        <div class="impressum_box" >
-            <h2>Impressum</h2>
-            <p><strong>Angaben gemäß § 5 TMG</strong></p>
+    <main>
+      <div class="container flex-center">
+        <div class="impressum_box">
+          <h2>Impressum</h2>
+          <p><strong>Angaben gemäß § 5 TMG</strong></p>
 
-             <table class="TabelleImpressum" >
+          <table class="TabelleImpressum">
+            <tr>
+              <td>
+                <strong>Stefan Leonhardt</strong><br />
+                Frederike-Fliedner-Weg 6<br />
+                40489 Düsseldorf
+              </td>
+              <td>
+                <strong>Bogdan-Nicusor Barbu</strong><br />
+                Walter-Flex-Str. 13<br />
+                46047 Oberhausen
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Aysel Isikli</strong><br />
+                Klaus-Liebmannweg 2 top2<br />
+                6410 Telfs
+              </td>
+              <td>
+                <strong>Paul Heigl</strong><br />
+                Eipeldauerstr. 38/1/4<br />
+                1220 Wien
+              </td>
+            </tr>
+          </table>
 
-                <tr>
-                    <td>
-                        <strong>Stefan Leonhardt</strong><br>
-                        Frederike-Fliedner-Weg 6<br>
-                        40489 Düsseldorf
-                    </td>
-                    <td>
-                        <strong>Bogdan-Nicusor Barbu</strong><br>
-                        Walter-Flex-Str. 13<br>
-                        46047 Oberhausen
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Aysel Isikli</strong><br>
-                        Klaus-Liebmannweg 2 top2<br>
-                        6410 Telfs
-                    </td>
-                    <td>
-                        <strong>Paul Heigl</strong><br>
-                        Eipeldauerstr. 38/1/4<br>
-                        1220 Wien
-                    </td>
-                </tr>
-
-            </table>
-            
-            <p>
-                <strong>Datenschutzerklärung:</strong><br>
-                <a href="https://bogdan-nicusor-barbu.developerakademie.net/INDEX.html" target="_blank">
-                    https://bogdan-nicusor-barbu.developerakademie.net/INDEX.html
-                </a>
-            </p>
+          <p>
+            <strong>Datenschutzerklärung:</strong><br />
+            <a
+              href="https://bogdan-nicusor-barbu.developerakademie.net/INDEX.html"
+              target="_blank"
+            >
+              https://bogdan-nicusor-barbu.developerakademie.net/INDEX.html
+            </a>
+          </p>
         </div>
-    </div>
+      </div>
+    </main>
     <footer>
       <div class="container footer-content">
         <div class="footer-logo">
-          <img class="logo" src="./img/logo.png" alt="" />
+          <img class="logo hidden-on-mobile" src="./img/logo.png" alt="" />
+          <img
+            class="logo hidden-on-desktop"
+            src="./img/logo_small.png"
+            alt=""
+          />
         </div>
         <div class="footer-socials">
           <a href="https://www.facebook.com/" target="_blank"
-            ><img class="logo" src="./img/Facebook.png"
+            ><img class="logo hidden-on-mobile" src="./img/Facebook.png"
           /></a>
           <a href="https://www.instagram.com/" target="_blank"
-            ><img class="logo" src="./img/Instagram.png"
+            ><img class="logo hidden-on-mobile" src="./img/Instagram.png"
           /></a>
           <a href="https://x.com/" target="_blank"
-            ><img class="logo" src="./img/Twitter.png"
+            ><img class="logo hidden-on-mobile" src="./img/Twitter.png"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="logo hidden-on-desktop"
+              src="./img/Facebook_Responsive.webp"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              class="logo hidden-on-desktop"
+              src="./img/Insta_Responsive.webp"
+          /></a>
+          <a href="https://x.com/" target="_blank"
+            ><img
+              class="logo hidden-on-desktop"
+              src="./img/Twitter_Responsive.webp"
           /></a>
         </div>
       </div>
     </footer>
-
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>

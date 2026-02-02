@@ -1,11 +1,16 @@
-function calculatePortion() {
 
-  let onePortion = [100, 2, 250, 150, 150, 150];
+import { initializeRecipieLogic } from "./recipieLogic.js";
 
-  let amount = document.getElementById("amountInput").value;
+//Definiere die Zutatenliste als Array von Objekten
+let Zutaten = [
+  { name: "Nudeln", amount: 100, unit: "gr" },
+  { name: "Paprika", amount: 2, unit: "" },
+  { name: "Mais", amount: 250, unit: "gr" },
+  { name: "Erbsen", amount: 150, unit: "gr" },
+  { name: "Karotten", amount: 150, unit: "gr" },
+  { name: "Butter", amount: 150, unit: "gr" }
+];
 
-  for (let i = 0; i < onePortion.length; i++) {
-      let result = onePortion[i] * amount;
-      document.getElementById(`zutat_${i}`).innerHTML = result;
-  }
-}
+//Rufe die Funktion zur Initialisierung der Rezeptlogik auf
+//und übergebe die Zutatenliste als Argument
+initializeRecipieLogic(Zutaten);

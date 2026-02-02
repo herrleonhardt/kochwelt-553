@@ -52,6 +52,10 @@ h3 {
   display: none;
 }
 
+.hidden-on-mobile {
+  display: block;
+} 
+
 .btn-primary {
   background-color: var(--green);
   height: var(--input-btn-height);
@@ -162,12 +166,21 @@ nav a:hover {
 
 main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container {
   width: 80%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recipe-preview {
@@ -389,6 +402,10 @@ footer {
     display: block;
   }
 
+  .hidden-on-mobile {
+  display: none;
+} 
+
   .recipe-preview img {
     height: 200px;
     width: 300px;
@@ -407,6 +424,10 @@ footer {
   .hidden-on-desktop {
     display: block;
   }
+
+   .hidden-on-mobile {
+  display: none;
+} 
 
   .recipe-preview {
     display: flex;
